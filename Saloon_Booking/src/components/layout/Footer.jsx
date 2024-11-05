@@ -1,0 +1,21 @@
+import React from "react";
+import { Col, Container, Row, Button } from "react-bootstrap";
+
+const Footer = () => {
+	let today = new Date();
+	return (
+		<footer className="bg-dark text-light py-3 footer mt-lg-5">
+			<Container>
+				<Row>
+					<Col xs={12} md={12} className="text-center">
+						<p className="mb-0 footer-text"> &copy; {today.getFullYear()} Glamour Salon</p>
+						<Button variant="btn-hotel" className="mt-2">Contact Us</Button>
+						<Button variant="btn-hotel" className="mt-2 ml-2">Follow Us</Button>
+					</Col>
+				</Row>
+			</Container>
+		</footer>
+	);
+};
+
+export default Footer;
